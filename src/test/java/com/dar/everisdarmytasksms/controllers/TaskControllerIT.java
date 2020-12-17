@@ -31,6 +31,5 @@ public class TaskControllerIT {
 		String response = this.restTemplate.getForObject("/task/count", String.class);
 		JSONAssert.assertEquals("3", response, true);
 	}
-
 }*/
 
