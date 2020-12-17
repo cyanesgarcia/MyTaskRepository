@@ -1,4 +1,4 @@
-package com.dar.everisdarmytasksms.controllers;
+/*package com.dar.everisdarmytasksms.controllers;
 
 import org.json.JSONException;
 import org.junit.jupiter.api.Test;
@@ -32,5 +32,5 @@ public class TaskControllerIT {
 		JSONAssert.assertEquals("3", response, true);
 	}
 
-}
+}*/
 
