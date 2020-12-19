@@ -1,4 +1,4 @@
-/*package com.dar.everisdarmytasksms.service;
+package com.dar.everisdarmytasksms.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.spy;
@@ -99,4 +99,3 @@ class ListMockTest {
 
 	}
 }
-*/

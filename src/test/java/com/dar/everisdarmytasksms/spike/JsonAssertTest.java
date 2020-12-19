@@ -1,4 +1,4 @@
-/*package com.dar.everisdarmytasksms.spike;
+package com.dar.everisdarmytasksms.spike;
 
 
 import org.json.JSONException;
@@ -27,4 +27,3 @@ class JsonAssertTest {
 	}
 
 }
-*/
