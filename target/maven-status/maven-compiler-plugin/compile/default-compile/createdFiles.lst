@@ -1,6 +1,0 @@
-com\dar\everisdarmytasksms\data\TaskRepository.class
-com\dar\everisdarmytasksms\controllers\TaskController.class
-com\dar\everisdarmytasksms\controllers\TaskRestController.class
-com\dar\everisdarmytasksms\model\Task.class
-com\dar\everisdarmytasksms\service\TaskService.class
-com\dar\everisdarmytasksms\EverisDarMytasksMsApplication.class
