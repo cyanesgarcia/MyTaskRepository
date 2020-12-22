@@ -4,21 +4,24 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dar.everisdarmytasksms.model.Task;
 import com.dar.everisdarmytasksms.service.TaskService;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class TaskRestController {	
     @Autowired
     private TaskService taskService;
-    
+        
 	@GetMapping("/task")
 	public List<Task> retrieveAllItems() {
 	    return taskService.retrieveAllItems();
@@ -46,12 +49,12 @@ public class TaskRestController {
 	}
 	
 	@PostMapping(path= "/task", produces = "application/json")
-	public Task insert(Task task) {
+	public Task insert(@RequestBody Task task) {
 		return taskService.saveByEntity(task);
 	}
 	
 	@PutMapping(path= "/task", produces = "application/json")
-	public Task updateTasks(Task task) {
+	public Task updateTasks(@RequestBody Task task) {
 		return taskService.updateTasks(task.getId(), task.getTask_status(), task.getDescription());
 	}
 	
